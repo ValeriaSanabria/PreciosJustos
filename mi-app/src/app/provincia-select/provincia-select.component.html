@@ -1,1 +1,7 @@
-<p>provincia-select works!</p>
+<label for="provinciaSelect" class="form-label"></label>
+<select class="form-select">
+    <option disabled selected>Seleccionar una opcion...</option>
+    <option *ngFor="let p of provincias" [value]="p.id">
+        {{p.nombre}}
+    </option>
+  </select>
