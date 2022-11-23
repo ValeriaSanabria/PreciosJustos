@@ -1,7 +1,21 @@
-<label for="provinciaSelect" class="form-label"></label>
+
+<!-- visto en clase online -->
+<!-- <label for="provinciaSelect" class="form-label"></label>
 <select class="form-select">
     <option disabled selected>Seleccionar una opcion...</option>
     <option *ngFor="let p of provincias" [value]="p.id">
         {{p.nombre}}
     </option>
+  </select> -->
+
+<!-- visto en clase del sabado -->
+  <select (change)="onChange($event.target)">
+    <option value="">Seleccione una provincia</option>
+    <option *ngFor="let provincia of provincias" [value]="provincia.id">{{provincia.nombre}}</option>
   </select>
+
+  <p>Provincia seleccionada: {{idSeleccionado.nombre}}</p>
+
+  <!-- para mostrar imagen al seleccionar cada provincia -->
+  <!-- agregar fotos de las provincias en assents -->
+  <img src="assets/{{idSeleccionado.imagen}}" width="200">
