@@ -1,0 +1,43 @@
+body{
+    background-color: #222229;
+    text-align: center;
+}
+h1, h3, p{
+    color: white;
+}
+h3{
+    color: white;
+}
+#justoTxt{
+    color:white; text-shadow: rgb(0, 0, 0) 0.2em 0.2em 0.2em;
+}
+#seccion1{
+    background-color: rgb(45, 171, 212);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoHeader{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#seccion2{
+    background-color: #214a96;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+}
+#lupa{
+    margin-left: 10px;
+}
+#imagenQR{
+    margin-top: 40px;
+}
+#escaneo{
+    margin-top: 10px;
+}
+#botonLista{
+    margin-top: 100px;
+}
