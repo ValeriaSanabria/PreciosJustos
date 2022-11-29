@@ -1,3 +1,21 @@
-p{
+h1,h3{
     color: white;
 }
+
+/* dentro de service */
+/* private http: HttpClient  */
+/* private apiUrlBase= .assets/api */
+/* getProvincias(){
+    return this.http.get<Provinci>(`${this.apiUrlBase}/provincias.json`).pipe(
+        map((data:any) => {
+            let respuesta = data.map((provincia: any) => {
+                leu aux = {
+                    ...provincia,
+                    url: provincia.api,
+                };
+                delete aux.api;
+                return aux;
+                )
+        })
+    );
+} */
