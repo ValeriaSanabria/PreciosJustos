@@ -1,11 +1,35 @@
+<link rel="stylesheet" href="articulos-list.component.css">
 <div class="container">
     <div class="row">
-        <div class="card col-sm-3 mb-2" *ngFor="let articulo of articulos">
-            <div class="card-body">
-                <h5 class="card-title">{{articulo.nombre}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{articulo.ean}}</h6>
-                <p class="card-text">{{articulo.precio}}</p>
-            </div>
+        <div id="cantidadArticulo">
+            <h4>2000 articulos</h4>
         </div>
     </div>
+    <div class="row">
+        <table class="table table-dark table-hover">
+            <thead class="table-primary">
+                <tr>
+                    <th class="col-2">EAN</th>
+                    <th class="col-8">Descripcion</th>
+                    <th class="col-2">Precio</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let articulo of articulos">
+                <tr>
+                    <td class="col-2">{{articulo.ean}}</td>
+                    <td class="col-8">{{articulo.nombre}}</td>
+                    <td class="col-2">{{articulo.precio}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <div class="row"> //para formar cards
+        <div class="card col-sm-3 mb-2" >
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div> -->
 </div>
