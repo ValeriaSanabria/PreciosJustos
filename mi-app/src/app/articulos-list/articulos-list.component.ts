@@ -1,10 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { ArticulosService } from '../services/articulos.service';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  ArticulosService
+} from '../services/articulos.service';
+import {
+  ActivatedRoute
+} from '@angular/router';
 
 export interface Articulo {
   ean: number,
-  nombre: string,
-  precio: number
+    nombre: string,
+    precio: number
 }
 
 @Component({
@@ -16,13 +24,22 @@ export class ArticulosListComponent implements OnInit {
   articulos: Articulo[] = []
   provinciaSlctd: string = "catamarca";
 
-  constructor(productosSrv: ArticulosService) {
-    productosSrv.getArticulos(this.provinciaSlctd).subscribe((data: any) => {
+  constructor(productosSrv: ArticulosService,
+    actRoute: ActivatedRoute) {
+    const {
+      nombreProvincia
+    } = actRoute.snapshot.params;
+
+    this.provinciaSlctd = nombreProvincia;
+    
+    productosSrv.getArticulos(nombreProvincia).subscribe((data: any) => {
       this.articulos = data;
     });
+
+
+    // this.provinciaSlctd = id;
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

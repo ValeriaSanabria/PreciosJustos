@@ -1,15 +1,9 @@
-<body>
-  <header>
-    <div id="seccion1" class="container-fluid">
-      <app-header></app-header>
-    </div>
-  </header>
-  <main>
-    <!-- html en clase -->
-    <div class="container">
-      <app-provincia-select></app-provincia-select>
-      <!-- <app-articulos-list></app-articulos-list> -->
-    </div>
+<app-header></app-header>
+<div class="container">
+  <router-outlet></router-outlet>
+  <!-- <app-provincia-select></app-provincia-select> -->
+  <!-- <app-articulos-list></app-articulos-list> -->
+  </div>
+  <footer>Footer</footer>
     <!-- hasta aca -->
-  </main>
-</body>
+

@@ -1,3 +1,33 @@
+body{
+    background-color: #222229;
+    text-align: center;
+}
+h1, h3, p{
+    color: white;
+}
+h3{
+    color: white;
+}
+#seccion1{
+    background-color: rgb(45, 171, 212);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#seccion2{
+    background-color: #214a96;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+}
+#lupa{
+    margin-left: 10px;
+}
+#botonLista{
+    margin-top: 100px;
+}
 #logoHeader{
     margin-left: 10px;
     margin-right: 10px;

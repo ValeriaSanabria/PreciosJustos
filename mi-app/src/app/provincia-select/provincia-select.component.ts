@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProvinciaService } from '../services/provincia.service';
 
 export interface Provincia {
   id: number;
   nombre: string;
-  api: string;
+  url: string;
 }
 @Component({
   selector: 'app-provincia-select',
@@ -24,13 +25,14 @@ export class ProvinciaSelectComponent implements OnInit {
   // ]
   provincias: Provincia[] = [];
 
-  provinciaSlctd: Provincia = {
+  provinciaSlctd: any = {
     id: 0,
     nombre: '',
     api: '',
   };
 
-  constructor(private provSrv: ProvinciaService) {
+  constructor(private provSrv: ProvinciaService,
+  private  router :Router) {
     provSrv.getProvincias().subscribe((data: any) => {
       this.provincias = data;
     });
@@ -46,4 +48,12 @@ export class ProvinciaSelectComponent implements OnInit {
     // this.provincias = data.provincias;
     });
   }
+
+// handleOnClickButton(){
+//   this.router.navigateByUrl('/provincia/${this.provinciaSlctd.url}')
+//     .toLowerCase()
+//     .replace(/ /g, '-')}.articulo)
+// },
+// }
+  
 }
