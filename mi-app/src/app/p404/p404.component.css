@@ -1,0 +1,13 @@
+#gnl{
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+#imagen404{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}

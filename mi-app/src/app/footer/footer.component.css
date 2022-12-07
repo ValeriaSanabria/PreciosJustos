@@ -16,7 +16,8 @@ h5{
     justify-content:right;
 }
 #direccion{
-    
+    text-align: center;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 #Info{
@@ -24,4 +25,8 @@ h5{
 }
 a{
     color: white;
+}
+#copyright{
+    text-align: center;
+    justify-content: center;
 }
