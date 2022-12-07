@@ -11,6 +11,7 @@ import { ArticulosListComponent } from './articulos-list/articulos-list.componen
 import { ProvinciaService } from './services/provincia.service';
 import { HomeComponent } from './home/home.component';
 import { P404Component } from './p404/p404.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { P404Component } from './p404/p404.component';
     HeaderComponent,
     ArticulosListComponent,
     HomeComponent,
-    P404Component
+    P404Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

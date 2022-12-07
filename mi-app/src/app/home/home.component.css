@@ -3,3 +3,35 @@
     position: relative;
     left: 100px;
 }
+#tMain{
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+#text2{
+    padding-top: 20px;
+ justify-content: right;   
+}
+#logo{
+display: flex;
+justify-content: right;
+text-align: right;
+padding-top: 20px;
+}
+h3{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+#selectorProv{
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#box2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
