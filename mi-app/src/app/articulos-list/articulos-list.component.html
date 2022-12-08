@@ -1,12 +1,39 @@
 <link rel="stylesheet" href="articulos-list.component.css">
 <div class="container">
-    <div class="row">
-        <div id="cantidadArticulo">
-            <h4>2000 articulos</h4>
-        </div>
+    <div class="text-center mb-5">
+        <!-- <a class="btn btn-link float-start" (click)="goBack()">Volver</a> -->
+        <a class="btn btn-link float-start" routerLink="/provincia" >Volver</a>
+        <h1>Productos de {{ provinciaSlctd }}</h1>
     </div>
     <div class="row">
-        <table class="table table-dark table-hover">
+        <div class="col-sm-8">
+            <div class="form-group">
+                <!-- <label for="filtroTexto" class="form-label">Buscá por nombre o por código</label> -->
+                <input
+                    [(ngModel)]="filtroTexto"
+                    (ngModelChange)="onFiltroTextoChange($event)"
+                    type="text"
+                    class="form-control"
+                    id="filtroTexto"
+                    placeholder="Buscá por nombre o por código"
+                >
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <input
+                [(ngModel)]="filtroPrecio"
+                (ngModelChange)="onFiltroPrecioChange($event)"
+                [max]="precioMaximo"
+                type="range"
+                class="form-range"
+                id="filtroPrecio"
+            >
+            <label for="filtroPrecio" class="form-label">Precio máximo - seleccionado: ${{filtroPrecio}}</label>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="articulosFiltrados.length > 0; else noHayProductosBlock" >
+        <table class="table table-dark table-hover" *ngFor="let articulo of articulosFiltrados" >
             <thead class="table-primary">
                 <tr>
                     <th class="col-2">EAN</th>
@@ -14,7 +41,7 @@
                     <th class="col-2">Precio</th>
                 </tr>
             </thead>
-            <tbody *ngFor="let articulo of articulos">
+            <tbody  >
                 <tr>
                     <td class="col-2">{{articulo.ean}}</td>
                     <td class="col-8">{{articulo.nombre}}</td>
@@ -23,6 +50,12 @@
             </tbody>
         </table>
     </div>
+
+    <ng-template #noHayProductosBlock>
+        <div class="alert alert-warning" role="alert">
+            No hay productos para mostrar
+        </div>
+    </ng-template>
     <!-- <div class="row"> //para formar cards
         <div class="card col-sm-3 mb-2" >
             <div class="card-body">
@@ -32,5 +65,12 @@
             </div>
         </div>
     </div> -->
-    <a id="botonvolver" class="btn btn-info" routerLink="/provincia">Volver</a>
+    <!-- <a id="botonvolver" class="btn btn-info" routerLink="/provincia">Volver</a> -->
 </div>
+
+
+
+
+
+<!-- Codigo Abril -->
+
