@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 import { ProvinciaService } from '../services/provincia.service';
 
 export interface Provincia {
@@ -25,35 +26,30 @@ export class ProvinciaSelectComponent implements OnInit {
   // ]
   provincias: Provincia[] = [];
 
-  provinciaSlctd: any = {
+  provinciaSlctd: Provincia = {
     id: 0,
     nombre: '',
-    api: '',
+    url: '',
   };
 
   constructor(private provSrv: ProvinciaService,
+    private location: Location,
   private  router :Router) {
     provSrv.getProvincias().subscribe((data: any) => {
       this.provincias = data;
     });
   }
 
-  ngOnInit(): void {
-    fetch('./assets/api/provincias.json')
-    .then((response) => {
-    return response.json();
-    })
-    .then((data) => {
-    console.log(data)
-    // this.provincias = data.provincias;
-    });
-  }
+  ngOnInit(): void {}
 
-// handleOnClickButton(){
+handleOnClickButton(){
 //   this.router.navigateByUrl('/provincia/${this.provinciaSlctd.url}')
 //     .toLowerCase()
 //     .replace(/ /g, '-')}.articulo)
 // },
 // }
-  
+this.router.navigateByUrl(
+  `/provincias/${this.provinciaSlctd.url}/articulos`
+);
+}
 }

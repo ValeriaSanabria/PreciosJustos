@@ -2,121 +2,121 @@
     {
         "id": 2,
         "nombre": "Buenos Aires",
-        "api": "https://panalsoft.com/precios-justos/api/v1/buenos-aires.json"
+        "api": "buenos-aires"
     },
     {
         "id": 3,
         "nombre": "CABA",
-        "api": "https://panalsoft.com/precios-justos/api/v1/caba.json"
+        "api": "caba"
     },
     {
         "id": 4,
         "nombre": "Catamarca",
-        "api": "https://panalsoft.com/precios-justos/api/v1/catamarca.json"
+        "api": "catamarca"
     },
     {
         "id": 5,
         "nombre": "Chaco",
-        "api": "https://panalsoft.com/precios-justos/api/v1/chaco.json"
+        "api": "chaco"
     },
     {
         "id": 6,
         "nombre": "Chubut",
-        "api": "https://panalsoft.com/precios-justos/api/v1/chubut.json"
+        "api": "chubut"
     },
     {
         "id": 7,
         "nombre": "Córdoba",
-        "api": "https://panalsoft.com/precios-justos/api/v1/cordoba.json"
+        "api": "cordoba"
     },
     {
         "id": 8,
         "nombre": "Corrientes",
-        "api": "https://panalsoft.com/precios-justos/api/v1/corrientes.json"
+        "api": "corrientes"
     },
     {
         "id": 9,
         "nombre": "Entre Ríos",
-        "api": "https://panalsoft.com/precios-justos/api/v1/entre-rios.json"
+        "api": "entre-rios"
     },
     {
         "id": 10,
         "nombre": "Formosa",
-        "api": "https://panalsoft.com/precios-justos/api/v1/formosa.json"
+        "api": "formosa"
     },
     {
         "id": 11,
         "nombre": "Jujuy",
-        "api": "https://panalsoft.com/precios-justos/api/v1/jujuy.json"
+        "api": "jujuy"
     },
     {
         "id": 12,
         "nombre": "La Pampa",
-        "api": "https://panalsoft.com/precios-justos/api/v1/la-pampa.json"
+        "api": "la-pampa"
     },
     {
         "id": 13,
         "nombre": "La Rioja",
-        "api": "https://panalsoft.com/precios-justos/api/v1/la-rioja.json"
+        "api": "la-rioja"
     },
     {
         "id": 14,
         "nombre": "Mendoza",
-        "api": "https://panalsoft.com/precios-justos/api/v1/mendoza.json"
+        "api": "mendoza"
     },
     {
         "id": 15,
         "nombre": "Misiones",
-        "api": "https://panalsoft.com/precios-justos/api/v1/misiones.json"
+        "api": "misiones"
     },
     {
         "id": 16,
         "nombre": "Neuquén",
-        "api": "https://panalsoft.com/precios-justos/api/v1/neuquen.json"
+        "api": "neuquen"
     },
     {
         "id": 17,
         "nombre": "Río Negro",
-        "api": "https://panalsoft.com/precios-justos/api/v1/rio-negro.json"
+        "api": "rio-negro"
     },
     {
         "id": 18,
         "nombre": "Salta",
-        "api": "https://panalsoft.com/precios-justos/api/v1/salta.json"
+        "api": "salta"
     },
     {
         "id": 19,
         "nombre": "San Juan",
-        "api": "https://panalsoft.com/precios-justos/api/v1/san-juan.json"
+        "api": "san-juan"
     },
     {
         "id": 20,
         "nombre": "San Luis",
-        "api": "https://panalsoft.com/precios-justos/api/v1/san-luis.json"
+        "api": "san-luis"
     },
     {
         "id": 21,
         "nombre": "Santa Cruz",
-        "api": "https://panalsoft.com/precios-justos/api/v1/santa-cruz.json"
+        "api": "santa-cruz"
     },
     {
         "id": 22,
         "nombre": "Santa Fe",
-        "api": "https://panalsoft.com/precios-justos/api/v1/santa-fe.json"
+        "api": "santa-fe"
     },
     {
         "id": 23,
         "nombre": "Santiago del Estero",
-        "api": "https://panalsoft.com/precios-justos/api/v1/santiago-del-estero.json"
+        "api": "santiago-del-estero"
     },
     {
         "id": 24,
         "nombre": "Tierra del Fuego",
-        "api": "https://panalsoft.com/precios-justos/api/v1/tierra-del-fuego.json"
+        "api": "tierra-del-fuego"
     },
     {
         "id": 25,
         "nombre": "Tucumán",
-        "api": "https://panalsoft.com/precios-justos/api/v1/tucuman.json"
+        "api": "tucuman"
     }
 ]
