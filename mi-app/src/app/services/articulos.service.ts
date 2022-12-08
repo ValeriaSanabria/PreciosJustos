@@ -10,7 +10,7 @@ export class ArticulosService {
   constructor(private http: HttpClient) { }
 
   getArticulos(provincia:string) {
-    return this.http.get('./assets/api/' + provincia +'.json')
+    return this.http.get('./assets/api/' + provincia + '.json')
       .pipe(
         map((data: any) => {
           // aca transformo datos

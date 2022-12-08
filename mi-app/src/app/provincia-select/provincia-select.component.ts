@@ -42,14 +42,15 @@ export class ProvinciaSelectComponent implements OnInit {
 
   ngOnInit(): void {}
 
-handleOnClickButton(){
-//   this.router.navigateByUrl('/provincia/${this.provinciaSlctd.url}')
-//     .toLowerCase()
-//     .replace(/ /g, '-')}.articulo)
-// },
-// }
-this.router.navigateByUrl(
-  `/provincias/${this.provinciaSlctd.url}/articulos`
-);
-}
+  handleOnClickButton() {
+    // this.router.navigateByUrl(
+    //   `/provincia/${this.provinciaSlctd.url
+    //     .toLowerCase()
+    //     .replace(/ /g, '-')}/articulos`
+    // );
+
+    this.router.navigateByUrl(
+      `/provincia/${this.provinciaSlctd.url}/articulos`
+    );
+  }
 }
