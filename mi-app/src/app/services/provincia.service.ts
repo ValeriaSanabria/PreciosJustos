@@ -10,17 +10,25 @@ export class ProvinciaService {
   constructor(private http: HttpClient) { }
 
   getProvincias() {
+    // return this.http.get('https://panalsoft.com/precios-justos/api/v1/provincias.json');
     return this.http.get('./assets/api/provincias.json').pipe(
       map((data: any) => {
-        return data.map((provincia: any) => {
-          let respuesta = {
+        let respuesta = data.map((provincia: any) => {
+          /* return {
+            nombre: provincia.nombre,
+            id: provincia.id,
+            url: provincia.api,
+          }; */
+          let aux = {
             ...provincia,
             url: provincia.api,
           };
-          delete respuesta.api;
-
-          return respuesta;
+          delete aux.api;
+          return aux;
         });
+        // console.log(respuesta);
+
+        return respuesta;
       })
     );
   }

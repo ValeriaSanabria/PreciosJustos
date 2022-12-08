@@ -12,6 +12,7 @@ import { ProvinciaService } from './services/provincia.service';
 import { HomeComponent } from './home/home.component';
 import { P404Component } from './p404/p404.component';
 import { FooterComponent } from './footer/footer.component';
+import { ArticulosService } from './services/articulos.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [ProvinciaService],
+  providers: [ProvinciaService, ArticulosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

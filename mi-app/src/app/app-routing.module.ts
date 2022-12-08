@@ -8,7 +8,7 @@ import { P404Component } from './p404/p404.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'provincia/:nombreProvincia/articulo', component: ArticulosListComponent},
+  {path: 'provincia/:nombreProvincia/articulos', component: ArticulosListComponent},
   {path: 'provincia', component: ProvinciaSelectComponent},
 // {path: 'articulo', component: ArticulosListComponent},
   {path: '**', component: P404Component}
