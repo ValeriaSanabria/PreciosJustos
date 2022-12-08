@@ -1,24 +1,25 @@
 h1,h3{
     color:black;
+    margin-top: 5%;
 }
+
+#botonLista{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    text-align: center;
+    
+}
+
 #selector{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-/* dentro de service */
-/* private http: HttpClient  */
-/* private apiUrlBase= .assets/api */
-/* getProvincias(){
-    return this.http.get<Provinci>(`${this.apiUrlBase}/provincias.json`).pipe(
-        map((data:any) => {
-            let respuesta = data.map((provincia: any) => {
-                leu aux = {
-                    ...provincia,
-                    url: provincia.api,
-                };
-                delete aux.api;
-                return aux;
-                )
-        })
-    );
-} */
+
+.btn{
+    padding:20px;
+}
+button{
+    text-decoration: underline;
+
+}
