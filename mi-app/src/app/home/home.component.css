@@ -35,3 +35,6 @@ h3{
     justify-content: center;
     align-items: center;
 }
+#centro{
+    justify-content: space-around;
+}

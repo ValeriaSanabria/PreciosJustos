@@ -1,7 +1,10 @@
 h1,h3{
-    color: white;
+    color:black;
 }
-
+#selector{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 /* dentro de service */
 /* private http: HttpClient  */
 /* private apiUrlBase= .assets/api */

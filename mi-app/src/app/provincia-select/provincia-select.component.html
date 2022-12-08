@@ -1,13 +1,14 @@
 <link rel="stylesheet" href="./provincia-select.component.css">
 
-<h1>Hola, selecciona una provincia</h1>
-
+<h1>Hola, selecciona una provincia:</h1>
+<div id="selector">
 <select class="form-select" [(ngModel)]="provinciaSlctd">
   <option value="" disabled selected>Seleccione una provincia</option>
   <option *ngFor="let provincia of provincias" [ngValue]=provincia>
       {{provincia.nombre}}
   </option>
 </select>
+</div>
 
 <h3>Provincia seleccionada: {{provinciaSlctd.nombre}}</h3>
 
